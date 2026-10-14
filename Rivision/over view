@@ -1,0 +1,200 @@
+# Python Data Types — Overview Notes
+
+## 1. Numbers
+Numbers are used to store numerical values.
+
+- int: Whole numbers, e.g., 10, 20, -5
+- float: Decimal numbers, e.g., 3.14, 5.5
+- complex: Complex numbers, e.g., 2+3j
+
+Example:
+```python
+a = 10
+b = 3.14
+c = 2 + 3j
+```
+
+## 2. String (str)
+A string is a sequence of characters used to store text.
+
+Example:
+```python
+name = "Utkarsh"
+language = "Python"
+```
+
+Properties:
+- Ordered
+- Immutable
+- Supports indexing and slicing
+- Written inside single or double quotes
+
+## 3. List (list)
+A list stores multiple values in a single variable.
+
+Example:
+```python
+fruits = ["Apple", "Mango", "Banana"]
+```
+
+Properties:
+- Ordered
+- Mutable
+- Allows duplicate values
+- Supports different data types
+
+## 4. Tuple (tuple)
+A tuple stores multiple values and cannot be modified after creation.
+
+Example:
+```python
+colors = ("Red", "Green", "Blue")
+```
+
+Properties:
+- Ordered
+- Immutable
+- Allows duplicate values
+- Useful for fixed collections of data
+
+## 5. Dictionary (dict)
+A dictionary stores data in key-value pairs.
+
+Example:
+```python
+student = {
+    "name": "Utkarsh",
+    "age": 20,
+    "course": "B.Tech"
+}
+```
+
+Properties:
+- Maintains insertion order
+- Mutable
+- Keys must be unique
+- Values can be duplicated
+- Values are accessed using keys
+
+## 6. Set (set)
+A set stores unique elements.
+
+Example:
+```python
+numbers = {10, 20, 30, 20}
+print(numbers)
+```
+
+Properties:
+- Does not allow duplicate elements
+- Unordered
+- Mutable
+- Does not support indexing
+- Use set() to create an empty set
+
+## 7. File Handling
+File handling is used to create, read, write, and append data in files. A file object is not a basic data type; it is an object used to work with files.
+
+Example:
+```python
+with open("notes.txt", "r") as file:
+    content = file.read()
+    print(content)
+```
+
+Common file modes:
+- r: Read
+- w: Write (overwrites existing content)
+- a: Append
+- x: Create a new file
+
+## 8. Boolean (bool)
+Boolean represents one of two values: True or False.
+
+Example:
+```python
+is_student = True
+is_logged_in = False
+
+print(10 > 5)
+```
+
+Uses:
+- Conditional statements
+- Comparisons
+- Decision-making
+- Loops
+
+## 9. None (NoneType)
+None represents the absence of a value.
+
+Example:
+```python
+result = None
+
+if result is None:
+    print("No result available")
+```
+
+Properties:
+- Its type is NoneType
+- Used when a value is unavailable or not assigned yet
+- Check it using "is None"
+
+## 10. Advanced Python Topics
+
+### Additional Built-in Types
+- bytes: Immutable binary data
+- bytearray: Mutable binary data
+- range: Represents a sequence of numbers
+- frozenset: Immutable set
+
+### Important Concepts
+- Type Casting: Converting one data type into another
+- Mutable vs Immutable: Understanding whether objects can be modified
+- Indexing and Slicing: Accessing individual elements or portions of sequences
+- List Comprehension: Creating lists using concise expressions
+- Dictionary Comprehension: Creating dictionaries using concise expressions
+- Lambda Functions: Creating small anonymous functions
+- *args and **kwargs: Passing variable numbers of arguments
+- Iterators and Generators: Processing values one at a time
+- Exception Handling: Managing errors using try and except
+- Object-Oriented Programming (OOP): Classes, objects, inheritance, and polymorphism
+- Decorators: Extending function behaviour
+- Type Hints: Specifying expected data types
+
+## Quick Revision
+
+| Data Type | Example | Mutable |
+|-----------|---------|---------|
+| int | 10 | No |
+| float | 3.14 | No |
+| complex | 2+3j | No |
+| str | "Hello" | No |
+| list | [1, 2, 3] | Yes |
+| tuple | (1, 2, 3) | No |
+| dict | {"a": 1} | Yes |
+| set | {1, 2, 3} | Yes |
+| bool | True | No |
+| NoneType | None | No |
+| range | range(5) | No |
+| bytes | b"Hello" | No |
+| bytearray | bytearray(5) | Yes |
+| frozenset | frozenset({1, 2}) | No |
+
+## Key Takeaways
+
+1. Python is a dynamically typed language.
+2. Use type() to check the type of an object.
+3. Lists, dictionaries, and sets are mutable.
+4. Strings, tuples, and numbers are immutable.
+5. Understanding data types is essential for Python programming, automation, and cybersecurity scripting.
+
+Example:
+```python
+x = 100
+print(type(x))
+
+y = "Python"
+print(type(y))
+```
