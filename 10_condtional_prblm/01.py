@@ -10,11 +10,10 @@ if(age<0):
      print("invalid")
 else:
     if age<13:
-        print("he/she is child")
+         print("he/she is child")
     elif 19>age>12:
-        print("he/she is teenager")
+         print("he/she is teenager")
     elif  19<age<60:
-        print("he/she is adult")
+         print("he/she is adult")
     else:
-        print("he/she is senior")
-    
+         print("he/she is senior")
