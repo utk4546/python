@@ -3,8 +3,8 @@
 ## 1. Numbers
 Numbers are used to store numerical values.
 
-- int: Whole numbers, e.g., 10, 20, -5
-- float: Decimal numbers, e.g., 3.14, 5.5
+- int: Whole numbers, e.g., 10, 20, 
+- float: Decimal numbers, e.g., 3.14, 
 - complex: Complex numbers, e.g., 2+3j
 
 Example:
