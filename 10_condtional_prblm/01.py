@@ -2,7 +2,7 @@
 # Less than 13 is Child
 # 13-19 teenager
 # 20-59 adult
-# 60+ senor
+# 60+ senior
 
 
 age=int(input("enter the age - "))
