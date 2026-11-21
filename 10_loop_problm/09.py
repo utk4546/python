@@ -8,7 +8,7 @@ utk=set()
 #     print("All elements are unique")
 for i in num :
     if i in utk:
-        print("duplicate ",i)
+        print("Duplicate ",i)
         break
     else:
         utk.add(i)
